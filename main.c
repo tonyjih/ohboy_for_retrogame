@@ -1960,7 +1960,7 @@ int main(int argc, char *argv[]){
 	screen = WIZ_SetVideoMode(320, 240, 16, SDL_SWSURFACE);
 #else
 #ifdef DINGOO_OPENDINGUX
-	ScreenSurface = SDL_SetVideoMode(320, 480, 16, SDL_HWSURFACE | SDL_DOUBLEBUF);
+	ScreenSurface = SDL_SetVideoMode(320, 480, 16, SDL_HWSURFACE /*| SDL_DOUBLEBUF*/);
   screen = SDL_CreateRGBSurface(SDL_SWSURFACE, 320, 240, 16, 0, 0, 0, 0);
 #else
 	screen = SDL_SetVideoMode(320, 240, 16, SDL_SWSURFACE);
